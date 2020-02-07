@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Infra.Bus\**" />
+    <Compile Remove="Infra.IoC\**" />
+    <Compile Remove="Microservices\**" />
+    <Compile Remove="Presentation\**" />
+    <EmbeddedResource Remove="Infra.Bus\**" />
+    <EmbeddedResource Remove="Infra.IoC\**" />
+    <EmbeddedResource Remove="Microservices\**" />
+    <EmbeddedResource Remove="Presentation\**" />
+    <None Remove="Infra.Bus\**" />
+    <None Remove="Infra.IoC\**" />
+    <None Remove="Microservices\**" />
+    <None Remove="Presentation\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>
